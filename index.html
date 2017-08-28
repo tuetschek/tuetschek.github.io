@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- vim: set ts=2 sw=2 sts=2: --> 
 <html>
 <title>Ondřej Dušek</title>
 <meta charset="UTF-8">
@@ -12,9 +13,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding-small w3-green">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-green w3-hover-white">About Me</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#projects" class="w3-button w3-block w3-green w3-hover-white">Projects</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#tools" class="w3-button w3-block w3-green w3-hover-white">Tools</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#publications" class="w3-button w3-block w3-green w3-hover-white">Publications</a>
+    </div>
+  </div>
+</div>
 
+<!-- Page Container -->
+<div class="w3-content w3-margin-top w3-padding-48" style="max-width:1400px;">
+  
   <!-- The Grid -->
   <div class="w3-row-padding">
   
@@ -34,10 +53,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-green"></i>o.dusek<span class="atcharhere">hw</span>.ac.uk</p>
           <hr>
         </div>
+        
         <div class="w3-container">
-            <p><a href="https://scholar.google.cz/citations?user=PI7rRV0AAAAJ"><i class="fa fa-graduation-cap w3-margin-right w3-text-green"></i>Google Scholar</a></p>
-            <p><a href="http://github.com/tuetschek/"><i class="fa fa-github w3-margin-right w3-text-green"></i>GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/tuetschek/"><i class="fa fa-linkedin w3-margin-right w3-text-green"></i>LinkedIn</a></p>
+          <p><a href="https://scholar.google.cz/citations?user=PI7rRV0AAAAJ"><i class="fa fa-graduation-cap w3-margin-right w3-text-green"></i>Google Scholar</a></p>
+          <p><a href="http://github.com/tuetschek/"><i class="fa fa-github w3-margin-right w3-text-green"></i>GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/tuetschek/"><i class="fa fa-linkedin w3-margin-right w3-text-green"></i>LinkedIn</a></p>
+          <hr>
         </div>
 
     <!-- End Left Column -->
@@ -48,7 +69,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     <div class="w3-white w3-text-black w3-padding-32">
       <div class="w3-container">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-id-card fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Me</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-id-card fa-fw w3-margin-right w3-xxlarge w3-text-green"></i><a name="about"></a>Me</h2>
         <p class="w3-row-padding">
         I am currently a post-doc in the <a href="https://sites.google.com/site/hwinteractionlab/">Interaction Lab</a> at <a href="https://www.hw.ac.uk/">Heriot-Watt University</a> in Edinburgh. I recently finished my Ph.D. in computational linguistics at the <a href="http://ufal.mff.cuni.cz">Institute of Formal and Applied linguistics</a>, <a href="http://cuni.cz/">Charles University</a> in Prague.
         </p>
@@ -57,8 +78,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </p>
       </div>
      
+      <a name="projects"></a>
       <div class="w3-container">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Projects</h2>
+        <h2 class="w3-text-grey w3-padding-24"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Projects</h2>
         <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-flash fa-fw w3-margin-right w3-xlarge w3-text-green"></i>Current</h3>
         <ul class="w3-ul">
           <li><a href="http://diligent-project.tumblr.com/about">DILiGENt</a> – natural language generation</li>
@@ -75,8 +97,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <ul>
       </div>
 
+      <a name="tools"></a>
       <div class="w3-container">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Tools</h2>
+        <h2 class="w3-text-grey w3-padding-24"><i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Tools</h2>
         <ul class="w3-ul">
           <li><a href="https://github.com/tuetschek/ratpred">RatPred</a> – trainable NLG evaluation tool</li>
           <li><a href="https://github.com/UFAL-DSG/tgen">TGen</a> – a statistical natural language generator</li>
@@ -86,6 +109,94 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <li><a href="https://github.com/UFAL-DSG/flect">Flect</a> – statistical morphology generation</li>
         </ul>
       </div>
+  
+      <a name="publications"></a>
+      <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-24"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>Publications</h2>
+        <div class="w3-container">
+        <h3 class="w3-text-grey"><i class="fa fa-newspaper-o fa-fw w3-margin-right w3-xlarge w3-text-green"></i>Papers</h3>
+        
+        <h4 class="w3-text-grey">2017</h4>
+        <ul class="w3-ul">
+					<li>Ondřej Dušek, Jekaterina Novikova, and Verena Rieser. <strong>Referenceless Quality Estimation for Natural Language Generation,</strong> In: <em>ICML Workshop on Learning to Generate Natural Language</em>, Sydney. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1708.01759">arXiv</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/tuetschek/ratpred">Github</a></li>
+          <li>Jekaterina Novikova, Amanda Curry, Ondřej Dušek, and Verena Rieser. <strong>Why We Need New Evaluation Metrics for NLG</strong>, In: <em>EMNLP</em>, Copenhagen. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1707.06875">arXiv</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/jeknov/EMNLP_17_submission">Github</a></li>
+          <li>Jekaterina Novikova, Ondřej Dušek, and Verena Rieser. <strong>The E2E Dataset: New Challenges For End-to-End Generation</strong>, In: <em>SIGDIAL</em>, Saarbrücken. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1706.09254">arXiv</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.macs.hw.ac.uk/InteractionLab/E2E/">Web</a></li>
+          <li>Jekaterina Novikova, Ondřej Dušek, and Verena Rieser. <strong>Data-driven Natural Language Generation: Paving the Road to Success</strong>, In: <em>WiNLP</em>, Vancouver. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green"class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1706.09433">arXiv</a></li>
+        </ul>
+
+        <h4 class="w3-text-grey">2016</h4>
+        <ul class="w3-ul">
+          <li>Ondřej Dušek and Filip Jurčíček.<strong> A Context-aware Natural Language Generator for Dialogue Systems</strong>, In: <em>SIGDIAL</em>, Los Angeles. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.aclweb.org/anthology/W/W16/W16-3622.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1608.07076">arXiv</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/UFAL-DSG/tgen">Github</a></li>
+          <li>Ondřej Dušek and Filip Jurčíček. <strong>Sequence-to-Sequence Generation for Spoken Dialogue via Deep Syntax Trees and Strings</strong>, In: <em>ACL</em>, Berlin. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.aclweb.org/anthology/P/P16/P16-2008.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://arxiv.org/abs/1606.05491">arXiv</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/UFAL-DSG/tgen">Github</a></li>
+          <li>Ondřej Bojar, Ondřej Dušek, Tom Kocmi, Jindřich Libovický, Michal Novák, Martin Popel, Roman Sudarikov, and Dušan Variš. <strong>CzEng 1.6: Enlarged Czech-English Parallel Corpus with Processing Tools Dockered</strong>, In: <em>TSD</em>, Brno. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://link.springer.com/chapter/10.1007/978-3-319-45510-5_27">SpringerLink</a></li>
+          <li>Rudolf Rosa, Martin Popel, Ondřej Bojar, David Mareček, and Ondřej Dušek. <strong>Moses &amp; Treex Hybrid MT Systems Bestiary</strong>, In: <em>Deep MT Workshop</em>, Lisbon. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://http://www.aclweb.org/anthology/W16-6401">PDF</a></li>
+          <li>Roman Sudarikov, Ondřej Bojar, Ondřej Dušek, Martin Holub, and Vincent Kríž. <strong>Verb Sense Disambiguation in Machine Translation</strong>, In: <em>HyTra-6</em>, Osaka. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://glicom.upf.edu/hytra6/pdf/HyTra606.pdf">PDF</a></li>
+          <li>Ondřej Dušek and Filip Jurčíček. <strong>A Context-aware Natural Language Generation Dataset for Dialogue Systems</strong>, In: <em>RE-WOCHAT</em>, Portorož. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://workshop.colips.org/re-wochat/documents/02_Paper_6.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2016/docs/slides.pdf">Slides</a></li>
+        </ul>
+
+        <h4 class="w3-text-grey">2015</h4>
+        <ul class="w3-ul">
+          <li>Rudolf Rosa, Ondřej Dušek, Michal Novák, and Martin Popel. <strong>Translation Model Interpolation for Domain Adaptation in TectoMT</strong>, In: <em>Deep MT Workshop</em>, Prague, 2015 <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://ufal.mff.cuni.cz/~rosa/2015/docs/dmtw2015_12.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://ufal.mff.cuni.cz/~rosa/2015/docs/presentation.pdf">Slides</a></li>
+          <li>Ondřej Dušek, Luís Gomes, Michal Novák, Martin Popel, and Rudolf Rosa. <strong>New Language Pairs in TectoMT</strong>, In: <em>WMT</em>, Lisbon, 2015 <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://aclweb.org/anthology/W/W15/W15-3009.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2015/docs/poster.pdf">Poster</a></li>
+          <li>Ondřej Dušek and Filip Jurčíček. <strong>Training a Natural Language Generator from Unaligned Data</strong>, In: <em>ACL-IJCNLP</em>, Beijing. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.aclweb.org/anthology/P/P15/P15-1044.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2015/docs/slides_0.pdf">Slides</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2015/docs/yrrsds-poster.pdf">Poster</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://techtalks.tv/talks/training-a-natural-language-generator-from-unaligned-data/61718/">Video</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/UFAL-DSG/tgen">Github</a></li>
+          <li>Ondřej Dušek, Eva Fučíková, Jan Hajič, Martin Popel, Jana Šindlerová, and Zdeňka Urešová. <b>Using Parallel Texts and Lexicons for Verbal Word Sense Disambiguation</b>, In: <em>Depling</em>, Uppsala. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://aclweb.org/anthology/W/W15/W15-2111.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2015/docs/slides_1.pdf">Slides</a></li>
+          <li>Zdeňka Urešová, Ondřej Dušek, Eva Fučíková, Jan Hajič, and Jana Šindlerová. <strong>Bilingual English-Czech Valency Lexicon Linked to a Parallel Corpus</strong>, In: <em>LAW IX</em>, Denver. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.aclweb.org/anthology/W15-1613">PDF</a></li>
+        </ul>
+
+	      <h4 class="w3-text-grey">2014</h4>
+        <ul class="w3-ul">
+          <li>Daniela Majchráková, Ondřej Dušek, Jan Hajič, Agáta Karčová, Radovan Garabík. <strong>Semi-automatic Detection of Multiword Expressions in the Slovak Dependency Treebank</strong>, In: <em>Computational Linguistics in Bulgaria</em>, Sofia. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://korpus.juls.savba.sk/attachments/publications/2014-mwe.pdf">PDF</a></li>
+          <li>Daniel Zeman, Ondřej Dušek, David Mareček, Martin Popel, Loganathan Ramasamy, Jan Štěpánek, Zdeněk Žabokrtský and Jan Hajič. <strong>HamleDT: Harmonized multi-language dependency treebank</strong>, in: <em>Language Resources and Evaluation</em> <em>(48) 4</em>, December 2014. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://link.springer.com/article/10.1007/s10579-014-9275-2">SpringerLink</a></li>
+          <li>Ondřej Dušek, Ondřej Plátek, Lukáš Žilka, and Filip Jurčíček. <strong>Alex: Bootstrapping a Spoken Dialogoue System for a New Domain by Real Users</strong>, in: <em>SIGDIAL</em>, Philadelphia. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.sigdial.org/workshops/conference15/proceedings/pdf/W14-4311.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/papers/2014_sigdial_alex_poster.pdf">Poster</a></li>
+          <li>Ondřej Dušek, Jan Hajič, Jaroslava Hlaváčová, Michal Novák, Pavel Pecina, Rudolf Rosa, Aleš Tamchyna, Zdeňka Urešová and Daniel Zeman. <strong>Machine Translation of Medical Texts in the Khresmoi Project</strong>,<strong> </strong>in: <em>WMT</em>, Baltimore. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.statmt.org/wmt14/pdf/W14-3326.pdf">PDF</a></li>
+          <li>Ondřej Dušek, Jan Hajič, and Zdeňka Urešová: <strong>Verbal Valency Frame Detection and Selection in Czech and English</strong>, in: <em>EVENTS</em>, Baltimore. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://acl2014.org/acl2014/W14-29/pdf/W14-2902.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/papers/2014_events_valency_poster.pdf">Poster</a></li>
+          <li>Pavel Pecina, Ondřej Dušek, Lorraine Goeuriot, Jan Hajič, Jaroslava Hlaváčová, Gareth Jones, Liadh Kelly, Johannes Leveling, David Mareček, Michal Novák, Martin Popel, Rudolf Rosa, Aleš Tamchyna, and Zdeňka Urešová: <strong>Adaptation of Machine Translation for Multilingual Information Retrieval in the Medical Domain</strong>, in: <em>Artificial Inteligence in Medicine</em> <em>(61) 3</em>. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.sciencedirect.com/science/article/pii/S0933365714000062">ScienceDirect</a></li>
+          <li>Matěj Korvas, Ondřej Plátek, Ondřej Dušek, Lukáš Žilka, and Filip Jurčíček: <strong>Free English and Czech Telephone Speech Corpus Shared Under the CC-BY-SA 3.0 License</strong>, in: <em>LREC</em>, Reykjavík. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.lrec-conf.org/proceedings/lrec2014/summaries/535.html">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2014_lrec_vystadial.pdf">Slides</a></li>
+          <li>Zdeňka Urešová, Ondřej Dušek, Jan Hajič, and Pavel Pecina: <strong>Multilingual Test Sets for Machine Translation of Search Queries for Cross-lingual Information Retrieval in the Medical Domain</strong>, in: <em>LREC</em>, Reykjavík. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.lrec-conf.org/proceedings/lrec2014/summaries/99.html">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/papers/2014_lrec_khresmoi_poster.pdf">Poster</a></li>
+        </ul>
+
+	      <h4 class="w3-text-grey">2013</h4>
+        <ul class="w3-ul">
+          <li>Ondřej Dušek, Filip Jurčíček: <strong>Robust Multilingual Statistical Morphological Generation Models</strong>, in: <em>ACL Student Research Workshop</em>, Sofia. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.aclweb.org/anthology/P13-3023">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2013_acl_flect.pdf">Slides</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://videolectures.net/acl2013_dusek_models/">Video</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/UFAL-DSG/flect">Github</a></li>
+          <li>Ondřej Dušek: <strong>Towards a Truly Statistical Natural Language Generator for Spoken Dialogues</strong>, in: <em>Week of Doctoral Students</em>. Prague. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.mff.cuni.cz/veda/konference/wds/proc/pdf13/WDS13_102_i3_Dusek.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2013_wds.pdf">Slides</a></li>
+          <li>Aleš Tamchyna, Ondřej Dušek, Rudolf Rosa, Pavel Pecina: <strong>MTMonkey: A Scalable Infrastructure for a Machine Translation Web Service</strong>, in: <em>The Prague Bulletin of Mathematical Linguistics 100</em>, 31-40. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/pbml/100/art-tamchyna-dusek-rosa-pecina.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/papers/2013_mtmonkey_poster.pdf">Poster</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://github.com/ufal/mtmonkey">Github</a></li>
+        </ul>
+        
+	      <h4 class="w3-text-grey">2012</h4>
+        <ul class="w3-ul">
+          <li>Ondřej Dušek, Zdeněk Žabokrtský, Martin Popel, Martin Majliš, Michal Novák, David Mareček: <strong>Formemes in English-Czech Deep Syntactic MT</strong>, in: <em>WMT</em>, Montréal. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://aclweb.org/anthology/W/W12/W12-3132.pdf">PDF</a></li>
+          <li>Rudolf Rosa, David Mareček, Ondrej Dušek: <strong>DEPFIX: A System for Automatic Correction of Czech MT Outputs</strong>, in: <em>WMT</em>, Montréal. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://www.aclweb.org/anthology/W/W12/W12-3146.pdf">PDF</a></li>
+          <li>Rudolf Rosa, Ondřej Dušek, David Mareček, Martin Popel: <strong>Using Parallel Features in Parsing of Machine-Translated Sentences for Correction of Grammatical Errors</strong>, in: <em>SSST-6</em>, Jeju. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="https://aclweb.org/anthology/W/W12/W12-4205.pdf">PDF</a></li>
+          <li>Ondřej Bojar, Zdeněk Žabokrtský, Ondrej Dušek, Petra Galušcáková, Martin Majliš, David Marecek, Jiří Maršík, Michal Novák, Martin Popel, Aleš Tamchyna: <strong>The Joy of Parallelism with CzEng 1.0</strong>, in: <em>LREC</em>, Istanbul. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/645_Paper.pdf">PDF</a></li>
+        </ul>
+        </div>
+        
+        <div class="w3-container">
+        <h3 class="w3-text-grey"><i class="fa fa-book fa-fw w3-margin-right w3-xlarge w3-text-green"></i>Theses</h3>
+         
+        <ul class="w3-ul">
+          <li><strong>Novel Methods for Natural Language Generation in Spoken Dialogue Systems.</strong> Ph.D. Thesis, Faculty of Mathematics and Physics, Charles University, Prague, 2017. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2017/docs/thesis.print.pdf">PDF</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2017/docs/thesis.summary.pdf">Summary</a></li>
+          <li><strong>Confrontation of Czech and German valency lexicons</strong>. Master's thesis, Faculty of Arts, Charles University in Prague, 2013. (in German) <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://bit.ly/valenz-wb">PDF</a></li>
+          <li><strong>Deep automatic analysis of English</strong>. Master's thesis, Faculty of Mathematics and Physics, Charles University in Prague, 2010. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/var/upload/docs/msc_thesis.pdf">PDF</a></li>
+          <li><strong>BashCommander</strong>. Bachelor thesis, Faculty of Mathematics and Physics, Charles University in Prague, 2007. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/var/upload/docs/bc_thesis.pdf">PDF</a></li>
+        </ul>
+        </div>
+        
+        <div class="w3-container">
+        <h3 class="w3-text-grey"><i class="fa fa-microphone fa-fw w3-margin-right w3-xlarge w3-text-green"></i>Talks</h3>
+        <ul class="w3-ul">
+          <li><strong>Natural Language Generation (Mostly) for Spoken Dialogue Systems</strong>. Lecture in Filip Jurčíček's <a href="http://ufal.mff.cuni.cz/courses/npfl099">Statistical Dialogue Systems Course</a>. May 11, 2016. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2016/docs/nlg-slides.pdf">Slides</a></li>
+          <li><strong>Natural Language Generation for Spoken Dialogue Systems</strong>. Lecture in Filip Jurčíček's <a href="http://ufal.mff.cuni.cz/courses/npfl099">Statistical Dialogue Systems Course</a>. May 14, 2015. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/2015/docs/slides.pdf">Slides</a></li>
+          <li><strong>A Two-stage Syntax-based Natural Language Generator</strong>. ÚFAL Monday seminar. Mar 9, 2015. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://lectures.ms.mff.cuni.cz/download.php?id=1700">Slides</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://lectures.ms.mff.cuni.cz/view.php?rec=260">Video</a></li>
+          <li><strong>Tecto to AMR and Translation</strong> (with Tim O'Gorman and others). JHU/CLSP Fred Jelinek Memorial PIRE Workshop, Aug 1, 2014.</li>
+          <li><strong>Ein Vergleich der deutschen und tschechischen Valenzwörterbücher durch Korpusanalyse und Befragung unter Linguisten</strong>. The 4th PRAGESTT Students' German Philology Conference. Mar 21, 2014. (in German) <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2014_pragestt_valency.pdf">Slides</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/papers/2014_pragestt_valency_handout.pdf">Handout</a></li>
+          <li><strong>Natural Language Generation (Not Only) in Dialogue Systems</strong>. Lecture in Filip Jurčíček's <a href="https://sites.google.com/site/filipjurcicek/teaching/statistical-dialogue-systems">Statistical Dialogue Systems Course</a>. May 22, 2013. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2013_sds_nlg.pdf">Slides</a></li>
+          <li><strong>Learning Morphology from the Corpus</strong>. ÚFAL Monday seminar. Nov 11, 2013. <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://ufal.mff.cuni.cz/~odusek/slides/2013_monday_seminar_flect.pdf">Slides</a> <a class="w3-button w3-round w3-small w3-border w3-white w3-border-green w3-padding-small w3-hover-green" href="http://lectures.ms.mff.cuni.cz/video/recordshow/index/43/168">Video</a></li>
+        </ul>
+        </div>
+
+      </div>
+
     
     <!-- End Right Column -->
     </div>
