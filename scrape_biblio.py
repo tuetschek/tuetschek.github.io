@@ -121,10 +121,10 @@ def longest_common_word_substring(a: str, b: str) -> List[str]:
     a_words = a.split()
     b_words = b.split()
     sm = difflib.SequenceMatcher(None, a_words, b_words)
-    match = sm.find_longest_match(0, len(a_words), 0, len(b_words))
+    match = max(sm.get_matching_blocks(), key=lambda x: x.size)
     if match.size == 0:
-        return []
-    return a_words[match.a: match.a + match.size]
+        return ""
+    return a_words[match.a : match.a + match.size]
 
 
 def reformat_item(li: Tag, poster_texts: Optional[List]) -> Optional[str]:
